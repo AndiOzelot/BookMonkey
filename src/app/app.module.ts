@@ -1,6 +1,6 @@
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { DateValueAccessorModule } from 'angular-date-value-accessor';
 
@@ -29,7 +29,8 @@ import { BookFormComponent } from './book-form/book-form.component';
     FormsModule,
     DateValueAccessorModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     BookStoreService
