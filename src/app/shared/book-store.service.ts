@@ -74,4 +74,12 @@ export class BookStoreService {
         catchError(this.errorHandler)
       );
   }
+
+  check(isbn: string): Observable<Boolean> {
+    return this.http
+      .get(`${this.api}/book/${isbn}/check`)
+      .pipe(
+        catchError(this.errorHandler)
+      );
+  }
 }
