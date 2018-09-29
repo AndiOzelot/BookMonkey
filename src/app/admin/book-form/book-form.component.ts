@@ -1,10 +1,9 @@
+import { BookStoreService } from './../../shared/book-store.service';
 import { BookValidators } from './../shared/book.validators';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Thumbnail } from './../shared/thumbnail';
-import { Book } from './../shared/book';
+import { Book } from './../../shared/book';
 import { BookFormErrorMessages } from './../book-form/book-form-error-messages';
-import { BookStoreService } from './../shared/book-store.service';
-import { BookFactory } from './../shared/book-factory';
+import { BookFactory } from './../../shared/book-factory';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormArray, FormBuilder, Validators } from '@angular/forms';
 

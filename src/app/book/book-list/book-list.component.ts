@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
-import { Book, Thumbnail } from './../shared/book';
+import { Book, Thumbnail } from './../../shared/book';
 import { Component, OnInit } from '@angular/core';
-import { BookStoreService } from '../shared/book-store.service';
+import { BookStoreService } from '../../shared/book-store.service';
 
 @Component({
   selector: 'bm-book-list',

@@ -11,7 +11,7 @@ export class IsbnPipe implements PipeTransform {
     }
 
     let prefix = '';
-    if (addPrefix) { //add Prefix?
+    if (addPrefix) {
       prefix = (value.length === 10) ? 'ISBN-10: ' : 'ISBN-13: ';
     }
 
