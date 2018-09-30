@@ -1,10 +1,10 @@
-<h1>Buchformular</h1>
+<h1 i18n="@@BookFormComponent:book form">Buchformular</h1>
 <form class="ui large form"
       [formGroup]="myForm"
       (ngSubmit)="submitForm()"
       novalidate>
   <div class="field">
-    <label>Buchtitel</label>
+    <label i18n="@@BookFormComponent:book authors">Buchtitel</label>
     <input formControlName="title">
      <div *ngIf="errors.title" class="ui negative message">
        {{ errors.title }}
@@ -35,7 +35,8 @@
     <label>Autoren</label>
     <div class="fields" formArrayName="authors">
       <div class="fifteen wide field" *ngFor="let control of authors.controls; index as i">
-        <input [formControlName]="i" placeholder="Autor {{i+1}}">
+        <input [formControlName]="i" placeholder="Autor {{i+1}}"
+          i18n-placeholder="@@BookFormComponent:author placeholder">
       </div>
       <div class="one wide field">
         <button (click)="addAuthorControl()" class="ui large button" type="button"> + </button>

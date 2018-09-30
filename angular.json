@@ -21,6 +21,10 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
+            "i18nFile": "src/messages.en.xtb",
+            "i18nLocale": "en",
+            "i18nFormat": "xtb",
+            "aot": false,
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",

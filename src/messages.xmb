@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="HomeComponent:header"><source>app/home/home.component.ts:4</source>Home</msg>
+  <msg id="HomeCompnent:tagline" desc="a proud sentence about the project"><source>app/home/home.component.ts:5</source>Das ist der BookMonkey.</msg>
+  <msg id="HomeComponent:book list link" desc="Text of the link to the books screen"><source>app/home/home.component.ts:7,9</source>
+          Buchliste ansehen
+          </msg>
+  <msg id="BookFormComponent:book form"><source>app/admin/book-form/book-form.component.ts:1</source>Buchformular</msg>
+  <msg id="BookFormComponent:book authors"><source>app/admin/book-form/book-form.component.ts:7</source>Buchtitel</msg>
+  <msg id="BookFormComponent:author placeholder"><source>app/admin/book-form/book-form.component.ts:38</source>Autor <ph name="INTERPOLATION"><ex>{{i+1}}</ex></ph></msg>
+</messagebundle>

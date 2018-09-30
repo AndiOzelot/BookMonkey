@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+[i18n],
+[i18n-placeholder],
+[i18n-title] {
+  border: 1px solid green !important;
+}

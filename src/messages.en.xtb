@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE translationbundle [
+<!ELEMENT translationbundle (translation)*>
+<!ATTLIST translationbundle lang CDATA #REQUIRED>
+
+<!ELEMENT translation (#PCDATA|ph)*>
+<!ATTLIST translation id CDATA #REQUIRED>
+<!ATTLIST translation desc CDATA #IMPLIED>
+<!ATTLIST translation meaning CDATA #IMPLIED>
+<!ATTLIST translation xml:space (default|preserve) "default">
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<translationbundle lang="en">
+  <translation id="HomeComponent:header">Home</translation>
+  <translation id="HomeCompnent:tagline" desc="a proud sentence about the project">This is the BookMonkey</translation>
+  <translation id="HomeComponent:book list link" desc="Text of the link to the books screen">View Booklist</translation>
+  <translation id="BookFormComponent:book form">Book Form</translation>
+  <translation id="BookFormComponent:book authors">Book Title</translation>
+  <translation id="BookFormComponent:author placeholder">Author</translation>
+</translationbundle>
