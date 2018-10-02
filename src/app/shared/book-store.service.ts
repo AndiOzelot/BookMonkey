@@ -1,16 +1,16 @@
 import { BookRaw } from './book-raw';
 import { BookFactory } from './book-factory';
 import { Book } from './book';
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { retry, map, catchError } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
 @Injectable()
 export class BookStoreService {
-  private api = 'https://book-monkey2-api.angular-buch.com';
+ //private api = 'https://book-monkey2-api.angular-buch.com';
 
-  constructor(private http: HttpClient) {
+  constructor( @Inject('API_URL') private api: string, private http: HttpClient) {
   }
 
   private errorHandler(error: Error | any): Observable<any> {

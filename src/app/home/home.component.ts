@@ -5,7 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'bm-home',
   template: `
-    <div class="ui container two column grid">
+    <div class="ui container three column grid">
       <div class="ui container column">
         <h1 i18n="@@HomeComponent:header">Home</h1>
         <p i18n="a proud sentence about the project@@HomeCompnent:tagline">Das ist der BookMonkey.</p>
