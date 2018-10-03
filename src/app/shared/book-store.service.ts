@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { retry, map, catchError } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class BookStoreService {
  //private api = 'https://book-monkey2-api.angular-buch.com';
 

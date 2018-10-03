@@ -23,7 +23,6 @@ import { BookResolver } from './shared/book-resolver.service';
     HttpClientModule
   ],
   providers: [
-    BookStoreService,
     { provide: LOCALE_ID, useValue: 'de' },
     BookResolver
   ],
